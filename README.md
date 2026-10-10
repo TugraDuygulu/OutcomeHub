@@ -8,6 +8,53 @@ Design and develop a web-based system that manages and maintains each student's 
 
 **Required stack:** Python + Django.
 
+## Quick start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/TugraDuygulu/OutcomeHub.git
+cd OutcomeHub
+```
+
+### 2. Create and activate a virtual environment
+
+macOS / Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Windows PowerShell:
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply migrations
+
+```bash
+python manage.py migrate
+```
+
+### 5. Start the development server
+
+```bash
+python manage.py runserver
+```
+
+Then open `http://127.0.0.1:8000/admin/` to confirm Django is running.
+
+> Sprint 0 uses Django's local SQLite database and a development-only settings file. Database configuration and production-safe secret handling will be improved in later issues.
+
 ## Core flow
 
 ```text
@@ -197,8 +244,8 @@ Immediate priorities:
 
 - [ ] Finalize four-person team
 - [ ] Register team + repo
-- [ ] Initialize Django project
-- [ ] Establish backlog and issue workflow
+- [x] Initialize Django project skeleton
+- [x] Establish backlog and issue workflow
 - [ ] Build the first data-model draft
 - [ ] Get one end-to-end MVP path working before expanding scope
 
